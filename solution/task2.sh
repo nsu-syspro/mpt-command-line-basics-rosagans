@@ -1,3 +1,3 @@
-find -name "foo.txt" -exec cat {} \;
-find -name "bar.txt" -exec cat {} \;
-find -name "baz.txt" -exec cat {} \;
+cat $(find -type f -name "foo.txt")
+cat $(find -type f -name "bar.txt")
+cat $(find -type f -name "baz.txt")
